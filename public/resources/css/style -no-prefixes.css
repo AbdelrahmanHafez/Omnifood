@@ -1,0 +1,632 @@
+/* ---------- VARIABLES ---------- */
+
+
+/*Orange color: #cf6d17*/
+
+
+/* ---------- BASIC SETUP ---------- */
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', 'Arial', 'sans-serif';
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+
+/* ----------------------------------------- */
+
+
+/* ---------- REUSABLE COMPONENTS ---------- */
+
+
+/* ----------------------------------------- */
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.box {
+    padding: 1%;
+}
+
+.clearfix {
+    zoom: 1;
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+
+/* ---------- ICONS ---------- */
+
+.icon-big {
+    font-size: 2em;
+    display: block;
+    padding-bottom: 20px;
+    color: #cf6d17;
+    text-align: center;
+}
+
+.icon-small {
+    color: #cf6d17;
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    font-size: 1.3em;
+    margin-right: 10px;
+    /*SECRETS TO ALIGN TEXT AND ICONS*/
+    line-height: 1.3em;
+    vertical-align: middle;
+    margin-top: -4px;
+}
+
+
+/* ---------------------------- */
+
+
+/* ---------- HEADER ---------- */
+
+
+/* ---------------------------- */
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("./img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-attachment: fixed;
+}
+
+.hero-text-box {
+    position: absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* ---------- PARAGRAPHS ---------- */
+
+.long-copy {
+    line-height: 135%;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.box p {
+    font-size: 0.9em;
+    line-height: 1.35em;
+    /*font-weight:400;*/
+}
+
+
+/* ---------- HEADINGS ---------- */
+
+h1,
+h2,
+h3 {
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    margin: 0 0 20px 0;
+    color: #fff;
+    font-size: 2.4em;
+    word-spacing: 3px;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    margin-bottom: 30px;
+    word-spacing: 2px;
+}
+
+h2:after {
+    display: block;
+    height: 2px;
+    background-color: #cf6d17;
+    content: "";
+    width: 100px;
+    margin: 30px auto;
+}
+
+h3 {
+    font-size: 1.1em;
+    padding-bottom: 15px;
+    letter-spacing: 0.5px;
+}
+
+
+/* ---------- BUTTONS ---------- */
+
+.btn:link,
+.btn:visited,
+input[type="submit"] {
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 200px;
+    color: white;
+}
+
+.btn-full:link,
+.btn-full:visited,
+input[type="submit"] {
+    margin-right: 15px;
+    color: #fff;
+    background: #e67e22;
+    border: 1px solid #e67e22;
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    color: #e67e22;
+    border: 1px solid #e67e22;
+    box-sizing: border-box;
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+.btn:hover,
+.btn:active,
+.btn:focus,
+input[type="submit"]:hover {
+    background-color: #cf6d17;
+    transition: background-color 0.2s, color 0.2s, border 0.2s;
+}
+
+.btn-full:hover,
+.btn-full:focus,
+input[type="submit"]:hover {
+    border-color: #cf6d17;
+}
+
+.btn-ghost:hover,
+.btn-ghost:focus {
+    color: white;
+    border-color: #cf6d17;
+}
+
+a.generic-link:link,
+a.generic-link:visited {
+    color: #cf6d17;
+    text-decoration: none;
+    padding: 1px;
+    border-bottom: 1px solid #cf6d17;
+    transition: color 0.2s, border 0.2s;
+}
+
+a.generic-link:hover,
+a.generic-link:active,
+a.-generic-link:focus {
+    color: #555;
+    border-bottom: 1px solid transparent;
+}
+
+
+/* ---------- NAVIGATION ---------- */
+
+.logo {
+    margin-top: 20px;
+    height: 100px;
+    float: left;
+}
+
+ul.main-nav {
+    list-style: none;
+    float: right;
+    margin-top: 50px;
+}
+
+ul.main-nav li {
+    display: inline-block;
+    margin-left: 40px
+}
+
+ul.main-nav li a:link,
+ul.main-nav li a:visited {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    border-bottom: 2px solid transparent;
+    padding: 8px 10px;
+    transition: border 0.2s;
+}
+
+ul.main-nav li a:hover {
+    border-bottom: 2px solid #cf6d17;
+}
+
+
+/* ------------------------------ */
+
+
+/* ---------- FEATURES ---------- */
+
+
+/* ------------------------------ */
+
+.section-features .long-copy {
+    padding-bottom: 30px;
+}
+
+
+/* ----------------------------------- */
+
+
+/* ---------- MEALS SECTION ---------- */
+
+
+/* ----------------------------------- */
+
+.section-meals {
+    padding: 0;
+}
+
+.meals-showcase {
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo {
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: #000;
+}
+
+.meal-photo img {
+    opacity: 0.7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.15);
+    transition: transform 0.5s;
+}
+
+.meal-photo img:hover {
+    transform: scale(1.04);
+    opacity: 1;
+    transition: transform 0.5s, opacity 0.5s;
+}
+
+.meal-photo:hover {
+    background-color: #fff;
+    transition: background-color 0.5s;
+}
+
+
+/* ---------------------------------- */
+
+
+/* ---------- HOW IT WORKS ---------- */
+
+
+/* ---------------------------------- */
+
+.section-steps {
+    background-color: #f1f1f1;
+}
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+}
+
+.app-screen {
+    width: 40%;
+}
+
+.works-step {
+    margin-bottom: 50px;
+}
+
+.works-step div {
+    color: #cf6d17;
+    border: 2px solid #cf6d17;
+    display: inline-block;
+    border-radius: 50%;
+    margin-right: 20px;
+    height: 55px;
+    width: 55px;
+    text-align: center;
+    font-size: 2em;
+    float: left;
+}
+
+.btn-app img {
+    height: 50px;
+    width: auto;
+    margin-right: 15px;
+}
+
+.get-app {
+    margin-top: 80px;
+}
+
+
+/* ----------------------------- */
+
+
+/* ---------- CITIES ---------- */
+
+
+/* ----------------------------- */
+
+.city-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.city-feature {
+    margin: 8px 0;
+}
+
+
+/* ---------------------------------- */
+
+
+/* ---------- TESTIMONIALS ---------- */
+
+
+/* ---------------------------------- */
+
+.section-testimonials {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/back-customers.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    height:100vh;
+}
+
+blockquote {
+    margin-top: 40px;
+    padding: 2%;
+    line-height: 1.35em;
+    font-style: italic;
+    position: relative;
+}
+
+blockquote:before {
+    content: "“";
+    font-size: 5em;
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    font-size: 0.9em;
+    margin-top: 25px;
+    display: block;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 15px;
+    vertical-align: middle;
+    margin-top: -8px;
+}
+
+
+/* --------------------------- */
+
+
+/* ---------- PLANS ---------- */
+
+
+/* --------------------------- */
+
+.section-plans {
+    background-color: #f1f1f1;
+}
+
+.plan-box {
+    margin-top: 40px;
+    background-color: #fff;
+    border-radius: 8px;
+    width: 90%;
+    margin-left: 5%;
+    box-shadow: 0 2px 2px #eeeeee;
+}
+
+.plan-box div {
+    padding: 15px;
+    border-bottom: 1px solid #ececec;
+}
+
+.plan-box div:first-of-type {
+    background-color: rgb(250, 250, 250);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.plan-box h3 {
+    text-align: center;
+}
+
+.plan-price {
+    font-size: 3em;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: 100;
+    color: #cf6d17;
+}
+
+.plan-price span {
+    font-size: 0.3em;
+    font-weight: 300;
+}
+
+.plan-price-meal {
+    font-size: 0.8em;
+}
+
+.plan-box ul {
+    list-style: none;
+}
+
+.plan-box ul li {
+    padding: 10px 0;
+}
+
+.plan-box div:last-child {
+    text-align: center;
+    border: 0;
+}
+
+
+/* -------------------------- */
+
+
+/* ---------- FORM ---------- */
+
+
+/* -------------------------- */
+
+.contact-form {
+    margin: 20px auto 0 auto;
+    width: 60%;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #cdcdcd;
+}
+
+textarea {
+    height: 100px;
+}
+
+input[type="checkbox"] {
+    margin: 10px 5px 10px 0;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+/* ---------------------------- */
+
+
+/* ---------- FOOTER ---------- */
+
+
+/* ---------------------------- */
+
+footer {
+    background-color: rgb(36, 36, 36);
+    color: rgb(145, 145, 145);
+    padding-top: 30px;
+    font-size: 0.8em;
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+    margin-left: -20px;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+}
+
+.footer-nav li a:visited,
+.footer-nav li a:link {
+    color: rgb(145, 145, 145);
+    text-decoration: none;
+    padding: 10px 20px;
+    line-height: 1.4em;
+    transition: color 0.2s;
+}
+
+.social-links li a:visited,
+.social-links li a:link {
+    color: rgb(145, 145, 145);
+    text-decoration: none;
+    line-height: 1.4em;
+    transition: color 0.2s;
+}
+
+.social-links li a i {
+    font-size: 1.4em;
+    transition: color 0.2s;
+    padding: 10px 20px;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:focus,
+.footer-nav li a:active {
+    color: rgb(235, 235, 235);
+}
+
+.facebook-icon:hover {
+    color: #3B5997;
+}
+
+.twitter-icon:hover {
+    color: #00C1F7;
+}
+
+.googleplus-icon:hover {
+    color: #C13C31;
+}
+
+.instagram-icon:hover {
+    color: #6A453B;
+}
+
+footer p {
+    margin: 30px 0 20px 0;
+    text-align: center;
+    font-size: 0.8em;
+}
